@@ -1,0 +1,43 @@
+@media (max-width: 991px) {
+  #job-info .container {
+    display: block;
+    column-count: 2;
+    /* grid-template-columns: repeat(2, 1fr);
+    align-items: baseline; */
+  }
+  #experience,
+  #education,
+  #activity,
+  #skill,
+  #hobby,
+  #language {
+    break-inside: avoid;
+  }
+  #job-info .container div:first-child {
+    margin-top: 0 !important;
+  }
+  .course {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .content-course p {
+    margin-bottom: 0;
+  }
+  .course img {
+    width: 285px;
+    height: auto;
+  }
+  #project .project-content div {
+    padding: 6px;
+  }
+  #project .project-content .main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* #project .project-content .main-content p {
+    margin-bottom: 0;
+    display: flex;
+  } */
+  #project .project-content .main-content p:last-child {
+    grid-column: 2/3;
+  }
+}
